@@ -46,6 +46,11 @@ class _MyHomePageState extends State<MyHomePage> {
     Item('John', 'Laser', 865, 'Occasional'),
     Item('Seri', 'Done', 796, 'Frequent'),
     Item('Cris', 'Miler', 201, 'Spender'),
+    Item('Leo', 'messi', 140, 'Saver'),
+    Item('Elizabeth', 'Mopez', 651, 'Frequent'),
+    Item('Derian', 'Dammon', 824, 'Occasional'),
+    Item('Crown', 'Flower', 613, 'Saver'),
+    Item('Ronaldo', 'love', 528, 'Player'),
   
   ];
   void _handleButtonPress() {
