@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
             ColorScheme.fromSeed(seedColor: Color.fromARGB(255, 1, 44, 13)),
         useMaterial3: true,
       ),
-      home: const MyHomePage(title: 'Aladhami Week 5'),
+      home: const MyHomePage(title: 'Week 6 Git'),
     );
   }
 }
@@ -51,14 +51,12 @@ class _MyHomePageState extends State<MyHomePage> {
     Item('Derian', 'Dammon', 824, 'Occasional'),
     Item('Crown', 'Flower', 613, 'Saver'),
     Item('Ronaldo', 'love', 528, 'Player'),
-  
   ];
   void _handleButtonPress() {
     setState(() {
       pageFirstLoad = false;
       isLoadingItemsFromDatabase = true;
     });
-  
 
     Future.delayed(Duration(seconds: 3), () {
       setState(() {
@@ -66,12 +64,12 @@ class _MyHomePageState extends State<MyHomePage> {
       });
     });
   }
-    void _restartPage() {
-      setState(() {
 
-        Navigator.pushNamedAndRemoveUntil(context,'/',(_) => false);
-      });
-    }
+  void _restartPage() {
+    setState(() {
+      Navigator.pushNamedAndRemoveUntil(context, '/', (_) => false);
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -123,9 +121,9 @@ class _MyHomePageState extends State<MyHomePage> {
                   )),
       ),
       floatingActionButton: pageFirstLoad
-          ? null 
+          ? null
           : FloatingActionButton(
-              onPressed: _restartPage, 
+              onPressed: _restartPage,
               tooltip: 'Reset Page',
               child: Icon(Icons.add),
             ),
